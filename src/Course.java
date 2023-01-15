@@ -3,12 +3,16 @@ public class Course {
     String name;
     String prefix;
     String code;
-    int note;
+    double note;
+    int vnote;
+    int snote;
     public Course(String name,String prefix,String code){
         this.name = name;
         this. prefix = prefix;
         this.code = code;
-        this.note = 0;
+        this.vnote=0;
+        this.snote=0;
+        this.note = snote*0.2+vnote*0.8;
 
     }
     public void addTeacher(Teacher t){

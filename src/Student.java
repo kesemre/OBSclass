@@ -23,15 +23,15 @@ public class Student {
     public void addBulkExamNote(int mat, int fizik, int kimya) {
 
         if (mat >= 0 && mat <= 100) {
-            this.mat.note = mat;
+            this.mat.vnote = mat;
         }
 
         if (fizik >= 0 && fizik <= 100) {
-            this.fizik.note = fizik;
+            this.fizik.vnote = fizik;
         }
 
         if (kimya >= 0 && kimya <= 100) {
-            this.kimya.note = kimya;
+            this.kimya.vnote = kimya;
         }
 
     }
