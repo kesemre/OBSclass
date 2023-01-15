@@ -7,4 +7,5 @@ public class Teacher {
         this.name = name;
         this.mpno = mpno;
         this.branch = branch;}
+
 }

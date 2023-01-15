@@ -12,7 +12,7 @@ public class Course {
         this.code = code;
         this.vnote=0;
         this.snote=0;
-        this.note = snote*0.2+vnote*0.8;
+        this.note = this.snote*0.2+this.vnote*0.8;
 
     }
     public void addTeacher(Teacher t){

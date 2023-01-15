@@ -35,6 +35,21 @@ public class Student {
         }
 
     }
+    public void addSozluNote(int mat, int fizik, int kimya) {
+
+        if (mat >= 0 && mat <= 100) {
+            this.mat.snote = mat;
+        }
+
+        if (fizik >= 0 && fizik <= 100) {
+            this.fizik.snote = fizik;
+        }
+
+        if (kimya >= 0 && kimya <= 100) {
+            this.kimya.snote = kimya;
+        }
+
+    }
 
     public void isPass() {
         if (this.mat.note == 0 || this.fizik.note == 0 || this.kimya.note == 0) {
@@ -52,6 +67,9 @@ public class Student {
     }
 
     public void calcAvarage() {
+        this.mat.note = this.mat.snote*0.2 + this.mat.vnote*0.8;
+        this.fizik.note = this.fizik.snote*0.2+this.fizik.vnote*0.8;
+        this.kimya.note = this.kimya.snote*0.2+this.kimya.vnote*0.8;
         this.avarage = (this.fizik.note + this.kimya.note + this.mat.note) / 3;
     }
 

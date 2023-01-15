@@ -12,6 +12,13 @@ public class Main {
         mat.addTeacher(t1);
         fizik.addTeacher(t2);
         kimya.addTeacher(t3);
-        mat.printTeacher();
+
+
+        Student s1 = new Student("ENES",1,"111",mat,fizik,kimya);
+        s1.addBulkExamNote(50,50,50);
+        s1.addSozluNote(60,60,60);
+        s1.calcAvarage();
+        System.out.println(s1.avarage);
+        s1.isPass();
     }
 }
